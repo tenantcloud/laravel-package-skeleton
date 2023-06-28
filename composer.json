@@ -1,6 +1,6 @@
 {
-	"name": "tenantcloud/composer-package",
-	"description": "A template for composer packages",
+	"name": "tenantcloud/package-skeleton-laravel",
+	"description": "Skeleton for Laravel packages",
 	"license": "MIT",
 	"require": {
 		"php": ">=8.1"
