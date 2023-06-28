@@ -15,8 +15,8 @@
 		"phpstan/phpstan-mockery": "^1.1"
 	},
 	"autoload": {
-		"psr-0": {
-			"": "src/"
+		"psr-4": {
+			"TenantCloud\\Skeleton\\": "src/"
 		}
 	},
 	"autoload-dev": {
