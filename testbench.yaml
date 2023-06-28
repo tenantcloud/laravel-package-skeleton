@@ -1,2 +1,2 @@
 providers:
-    - TenantCloud\Skeleton\TransUnionSDKServiceProvider
+    - TenantCloud\Skeleton\SkeletonServiceProvider
