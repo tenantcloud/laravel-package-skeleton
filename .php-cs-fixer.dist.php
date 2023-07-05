@@ -8,8 +8,8 @@ use TenantCloud\PhpCsFixer\Config;
 use TenantCloud\PhpCsFixer\RuleSet\TenantCloudSet;
 
 $finder = Finder::create()
-	->in('src')
-	->in('tests')
+	->in(__DIR__)
+	->exclude('vendor')
 	->name('*.php')
 	->notName('_*.php')
 	->ignoreVCS(true);
