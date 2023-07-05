@@ -31,7 +31,7 @@
 		"test": "vendor/bin/pest",
 		"coverage": "XDEBUG_MODE=coverage vendor/bin/pest --coverage-html coverage",
 		"cs-fix": "vendor/bin/php-cs-fixer fix -v --show-progress=dots",
-		"phpstan":  "vendor/bin/phpstan analyse",
+		"phpstan":  "vendor/bin/phpstan analyse --memory-limit=2G",
 		"testbench": "vendor/bin/testbench"
 	},
 	"minimum-stability": "stable",
