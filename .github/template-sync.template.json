@@ -1,0 +1,28 @@
+{
+	"plugins": [
+		"composer",
+		"template-sync",
+		{
+			"name": "sync",
+			"filter": [
+				"**/*",
+				"!.github/template-sync/**",
+				"!cli/**",
+				"!docs/**",
+				"!scripts/**",
+				"!src/**",
+				"!resources/**",
+				"!tests/**",
+				"!bootstrap.php",
+				"!_ide_custom_helpers.php",
+				"!testbench.yaml",
+				"!phpstan.neon",
+				"!phpstan*.neon",
+				"!README.md",
+				"!CHANGELOG.md",
+				"!docker-compose.yml",
+				"!docker-compose.*.yml"
+			]
+		}
+	]
+}
