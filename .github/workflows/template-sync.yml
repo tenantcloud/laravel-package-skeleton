@@ -8,7 +8,7 @@ on:
 jobs:
     sync:
         name: Sync
-        runs-on: ubuntu-latest
+        runs-on: pipeline
 
         steps:
             - name: Checkout
@@ -50,7 +50,7 @@ jobs:
     # after 60 days without commits, so this job is there to prevent it.
     workflow-keepalive:
         name: Workflow keepalive
-        runs-on: ubuntu-latest
+        runs-on: pipeline
         if: github.event_name == 'schedule'
 
         permissions:
