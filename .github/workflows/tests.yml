@@ -24,10 +24,10 @@ jobs:
         container: chialab/php:${{ matrix.php }}
         steps:
             - name: Checkout code
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Composer cache
-              uses: actions/cache@v3
+              uses: actions/cache@v4
               with:
                   path: vendor
                   key: composer-${{ hashFiles('composer.json') }}
@@ -46,10 +46,10 @@ jobs:
         container: chialab/php:8.2
         steps:
             - name: Checkout code
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Composer cache
-              uses: actions/cache@v3
+              uses: actions/cache@v4
               with:
                   path: vendor
                   key: composer-${{ hashFiles('composer.json') }}
@@ -67,7 +67,7 @@ jobs:
 
         steps:
             - name: Checkout code
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Run prettier
               uses: actionsx/prettier@v3
@@ -86,10 +86,10 @@ jobs:
         container: chialab/php:${{ matrix.php }}
         steps:
             - name: Checkout code
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Composer cache
-              uses: actions/cache@v3
+              uses: actions/cache@v4
               with:
                   path: vendor
                   key: composer-${{ hashFiles('composer.json') }}
