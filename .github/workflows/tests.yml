@@ -28,6 +28,7 @@ jobs:
 
             - name: Composer cache
               uses: actions/cache@v4
+              if: ${{ !env.ACT }}
               with:
                   path: vendor
                   key: composer-${{ hashFiles('composer.json') }}
@@ -50,6 +51,7 @@ jobs:
 
             - name: Composer cache
               uses: actions/cache@v4
+              if: ${{ !env.ACT }}
               with:
                   path: vendor
                   key: composer-${{ hashFiles('composer.json') }}
@@ -90,6 +92,7 @@ jobs:
 
             - name: Composer cache
               uses: actions/cache@v4
+              if: ${{ !env.ACT }}
               with:
                   path: vendor
                   key: composer-${{ hashFiles('composer.json') }}
