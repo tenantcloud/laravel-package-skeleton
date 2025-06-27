@@ -2,6 +2,4 @@
 
 namespace TenantCloud\Skeleton;
 
-class Example
-{
-}
+class Example {}
